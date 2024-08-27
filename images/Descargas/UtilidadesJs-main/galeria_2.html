@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/galeria_2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animales del mundo</h1>
+        <p>La imagen seleccionada se mostrará en una ventana modal</p>
+        <div class="gallery">
+            <img src="img/miniaturas/cebra_peq.jpg" alt="Cebra" class="thumbnail" data-full="img/cebra.jpg">
+            <img src="img/miniaturas/girafa_peq.jpg" alt="Girafa" class="thumbnail" data-full="img/girafa.jpg">
+            <img src="img/miniaturas/guepardo_peq.jpg" alt="Guepardo" class="thumbnail" data-full="img/guepardo.jpg">
+            <img src="img/miniaturas/leon_peq.jpg" alt="León" class="thumbnail" data-full="img/leon.jpg">
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="" alt="Imagen ampliada" class="modal-image">
+        </div>
+    </div>
+
+    <script src="js/galeria_2.js"></script>
+</body>
+</html>

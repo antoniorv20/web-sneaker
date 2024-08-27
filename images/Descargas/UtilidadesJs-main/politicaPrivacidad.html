@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de privacidad</title>
+    <link rel="stylesheet" href="css/politica.css">
+</head>
+<body>
+    <!-- Contenido pantalla principal -->
+    <div class="container">
+        <h1>Aceptar política de privacidad</h1>
+        <p>Formulario con un checkbox que hay que seleccionar para indicar que se ha aceptado la política de privacidad</p>
+        <h2>Formulario de Registro</h2>
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad">
+            </div>
+            <div class="form-group check">
+                <input type="checkbox" id="cbox" value="cbox" />
+                <p>
+                    Acepta la 
+                    <a id="mostrarModal">Política de privacidad</a>
+                </p>
+            </div>
+            <button type="submit">Registrarse</button>
+            
+        </form>
+    </div>
+    <!-- fin pantalla principal -->
+
+        <!-- contenido de ventana modal -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <div class="politica">
+                    <h1>Política de privacidad</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe temporibus nobis libero, aliquid eligendi blanditiis neque, facere esse expedita ex facilis eius rerum iusto ipsum numquam consequuntur non quam ut.</p>
+                    <hr>
+                    <h1>Política de privacidad</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe temporibus nobis libero, aliquid eligendi blanditiis neque, facere esse expedita ex facilis eius rerum iusto ipsum numquam consequuntur non quam ut.</p>
+                    <hr>
+                    <h1>Política de privacidad</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe temporibus nobis libero, aliquid eligendi blanditiis neque, facere esse expedita ex facilis eius rerum iusto ipsum numquam consequuntur non quam ut.</p>
+                </div>
+            </div>
+        </div>
+        <!-- fin contenido ventana modal -->
+         <script src="js/politica.js"></script>
+</body>
+</html>
