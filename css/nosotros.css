@@ -1,394 +1,392 @@
-* {
-  list-style:none;
-  text-decoration:none;
-  margin:0;
-  padding:0;  /* Evitar que los menus se desplacen a derecha */
+/* Importa la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+/* Estilos globales aplicados a todos los elementos */
+*,
+*::before,
+*::after {
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+}
+
+/* Estilos específicos para el elemento html */
+html {
+    font-family: 'Poppins', sans-serif; /* Define la fuente principal para todo el documento */
+    font-size: 10px; /* Tamaño de fuente base para el cálculo de tamaños en rem */
+    color: #000; /* Color del texto por defecto */
+    scroll-behavior: smooth; /* Hacer el desplazamiento suave */
+}
+
+/* Estilos para el body */
+body {
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+/* Estilos para todos los elementos <section> */
+section {
+    padding: 3.9rem 0; /* Espaciado vertical */
+    overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+}
+
+/* Estilos para las imágenes */
+img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+    max-width: 100%; /* Asegura que la imagen no se expanda más allá del ancho del contenedor */
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos para los párrafos */
+p {
+    font-size: 1.6rem; /* Tamaño de la fuente del párrafo */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 122.5rem; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 2.4rem; /* Espaciado horizontal */
+}
+
+
+
+
+/*HEADER*/
+
+header {
+  width: 100%; /* Ancho completo del header */
+  position: absolute; /* Posición absoluta para superponerlo sobre otros elementos */
+  top: 0; /* Coloca el header en la parte superior */
+  left: 0; /* Coloca el header en el borde izquierdo */
+  z-index: 1; /* Asegura que el header esté por encima de otros elementos */
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent); /* Degradado de fondo para el header */
+}
+
+.container-header {
+  width: 90%;
+  max-width: 122.5rem;
+  margin: 0 auto;
+}
+
+.nav {
+  height: 7.2rem; /* Altura de la barra de navegación */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.logo {
+  color: #000000; /* Color del texto del logo */
+  margin-top: 6rem; /* Espaciado superior del logo */
+  font-size: 5.5rem; /* Tamaño de la fuente del logo */
+  font-weight: 600; /* Peso de la fuente del logo */
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 6rem; /* Espaciado superior del logo */
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Espacia los elementos uniformemente */
+}
+
+.nav-item {
+  margin-left: 3rem; /* Mayor espacio entre los elementos de navegación */
+  border-bottom: 2px solid rgba(255, 255, 255, .3); /* Borde inferior para los ítems de navegación */
+}
+
+header .nav .nav-link {
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  display: block; /* Hace que el enlace ocupe el espacio completo del ítem de navegación */
+  color: #000000; /* Color del texto del enlace */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  margin-right: -2px; /* Ajuste negativo para alinear los enlaces */
+}
+
+.nav-link:hover {
+  color: #ffc845; /* Cambia el color del enlace al pasar el ratón */
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+
+/* Estilos para el body */
+body {
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 80px; /* Ajusta el valor según la distancia deseada */
+
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.section {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-    
-  #contenedor {
-  text-align: center;
-  margin: 20px auto;  /* para centrar el div */
+
+  to {
+    opacity: 1;
   }
-  
-  .desplegable {
-    position:fixed;
-       display: inline-block;   /* para centrar el men� en la pantalla  */
-  }
-  
-  .desplegable li {
-       float:left;  /*  para que el menu sea horizontal, ordenado */
-  }
-  
-  .desplegable li ul li {
-       float: none;  /* para que el menu se despliegue en vertical */
-  }
-  
-  .desplegable li ul {
-       display:none;  /* el desplegable no es visible por defecto */
-  }
-  
-  .desplegable li:hover ul {
-       display:block;  /* al pasar sobre el menu se hace visible  */
-  }
-  
-  .desplegable li a {
-       background:blue;
-       color:#FFF;
-       display:block;
-       padding:14px 14px;
-       margin:2px;
-  }
-  
-  .desplegable li a:hover {
-       background: #C6C085; 
-  }
-  form{
-  position: absolute;
-    top:  15px; 
-    right: 50px;
-  }
-  ul{
-  position: relative;
-    top:  15px; 
-    left: 15px;
-  }
-  table{
-  margin-right:auto;
-  margin-left:auto ;
-  }
-  #foter{
-  float:right;font-size: small;
-  }
-  #icono1 {
-  display:block;
-  margin-left:850px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQS7 {
-  display:block;
-  margin-top:50px;
-  margin-left:650px;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQS1 {
-  display:block;
-  margin-top:150px;
-  margin-left:620px;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQS2 {
-  display:block;
-  margin-top:240px;
-  margin-left:575px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQS3 {
-  display:block;
-  margin-top:340px;
-  margin-left:720px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #cliente1 {
-  display:block;
-  margin-top:400px;
-  margin-left:575px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQS4 {
-  display:block;
-  margin-top:940px;
-  margin-left:660px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQS5 {
-  display:block;
-  margin-top:1020px;
-  margin-left:640px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #trabajando {
-  display:block;
-  margin-top:1120px;
-  margin-left:575px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQS6 {
-  display:block;
-  margin-top:1650px;
-  margin-left:680px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #resena {
-  display:block;
-  margin-top:1700px;
-  margin-left:575px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #icono {
-  display:block;
-  margin-left:600px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQH1 {
-  display:block;
-  margin-top:100px;
-  margin-left:630px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQH2 {
-  display:block;
-  margin-top:250px;
-  margin-left:950px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQH3 {
-  display:block;
-  margin-top:820px;
-  margin-left:950px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQH4 {
-  display:block;
-  margin-top:1380px;
-  margin-left:850px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #altas1 {
-  display:block;
-  margin-top:230px;
-  margin-left:600px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #bajas1 {
-  display:block;
-  margin-top:800px;
-  margin-left:600px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #reclamaciones1 {
-  display:block;
-  margin-top:1380px;
-  margin-left:600px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQH5 {
-  display:block;
-  margin-top:1900px;
-  margin-left:600px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #textoQH6 {
-  display:block;
-  margin-top:2000px;
-  margin-left:700px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #correo2 {
-  display:block;
-  margin-top:2100px;
-  margin-left:600px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  body{
-  background: url(fondo3.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  }
-  #tweet {
-  display:block;
-  margin-left:1350px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 2;
-  position: absolute;
-  }
-  #fotooficina {
-  margin-top:200px;
-  display:block;
-  margin-left:180px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 1;
-  position: absolute;
-  }
-  #sobreaplicacion {
-  margin-top:200px;
-  display:block;
-  position:fixed;
-  margin-left:1250px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 1;
-  position: absolute;
-  }
-  .footer {
-     position: fixed;
-     left: 0;
-     bottom: 0;
-     width: 100%;
-     background-color: #E6E6E6;
-     color: black;
-     text-align: center;
-     z-index:5;
-  }
-  #redessociales {
-  margin-top:860px;
-  display:block;
-  position:fixed;
-  margin-left:180px;
-  padding-left:3%;
-  padding:1%;
-  z-index: 1;
-  position: absolute;
-  }
-  
-  .login {
-    position:fixed;
-  margin-right:1400px;
-  margin-top:250px;
-    width: 300px;
-    padding: 30px 25px;
-    background: white;
-    border: 1px solid #c4c4c4;
-  }
-  
-  h1.login-title {
-    margin: -28px -25px 25px;
-    padding: 15px 25px;
-    line-height: 30px;
-    font-size: 25px;
-    font-weight: 300;
-    color: #ADADAD;
-    text-align:center;
-    background: #f7f7f7;
-   
-  }
-  
-  .login-input {
-    width: 285px;
-    height: 50px;
-    margin-bottom: 25px;
-    padding-left:10px;
-    font-size: 15px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  .login-input:focus {
-      border-color:#6e8095;
-      outline: none;
+}
+
+
+footer {
+  padding: 7.9rem 0; /* Espaciado vertical */
+  background-color: #121212; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
+  text-align: center; /* Centra el texto */
+  position: relative; /* Posición relativa para colocación de elementos internos */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+  overflow: hidden; /* Oculta cualquier contenido desbordado */
+}
+
+/* Estilos para el título en el footer */
+.footer-content h4 {
+  font-size: 1.9rem; /* Tamaño de la fuente del título */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  font-weight: 100; /* Peso de la fuente */
+  letter-spacing: 3px; /* Espaciado entre letras */
+  margin-bottom: 3rem; /* Espaciado inferior */
+}
+
+/* Estilos para los círculos dentro del contenido del footer */
+.footer-content .circle {
+  margin: 2.4rem 0; /* Espaciado vertical */
+}
+
+/* Estilos para la sección "about" en el footer */
+.footer-content-about {
+  margin-bottom: 5.4rem; /* Espaciado inferior */
+}
+
+/* Estilos para los párrafos dentro de la sección "about" del footer */
+.footer-content-about p {
+  line-height: 2; /* Altura de línea para los párrafos */
+}
+
+/* Estilos para la lista de íconos sociales */
+.social-icons {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin-bottom: 5.4rem; /* Espaciado inferior */
+  display: flex; /* Usa Flexbox para la disposición de los íconos */
+  justify-content: center; /* Centra horizontalmente los íconos */
+}
+
+/* Estilos para los íconos sociales */
+.social-icons i {
+  font-size: 2rem; /* Tamaño de la fuente de los íconos */
+  color: #3bcc75; /* Color del ícono */
+  padding: .8rem 2rem; /* Espaciado interno del ícono */
+}
+
+/* Estilos para los íconos sociales al pasar el ratón o estar enfocados */
+.social-icons i:hover,
+.social-icons i:focus {
+  color: #ffc845; /* Cambia el color del ícono */
+}
+
+/* Estilos para el formulario de suscripción al boletín */
+.news-form {
+  width: 100%; /* Ancho completo del formulario */
+  position: relative; /* Posición relativa para colocación de elementos internos */
+  display: flex; /* Usa Flexbox para la disposición de los elementos */
+  justify-content: center; /* Centra horizontalmente el formulario */
+}
+
+/* Estilos para el campo de entrada del formulario de suscripción */
+.news-input {
+  width: 100%; /* Ancho completo del campo de entrada */
+  max-width: 25rem; /* Ancho máximo del campo de entrada */
+  padding: 1rem; /* Espaciado interno del campo de entrada */
+  border-radius: .4rem; /* Bordes redondeados del campo de entrada */
+}
+
+/* Estilos para el botón del formulario de suscripción */
+.news-btn {
+  background: transparent; /* Fondo transparente del botón */
+  border: none; /* Sin borde */
+  color: #252525; /* Color del texto del botón */
+  cursor: pointer; /* Muestra un cursor de puntero cuando se pasa sobre el botón */
+  font-size: 1.6rem; /* Tamaño de la fuente del botón */
+  padding: 1px .6rem; /* Espaciado interno del botón */
+  position: absolute; /* Posición absoluta para colocarlo en un lugar específico */
+  top: 30%; /* Posición vertical del botón */
+  margin-left: 20.5rem; /* Espaciado desde el borde izquierdo */
+}
+
+
+  /* From Uiverse.io by G4b413l */ 
+  .card svg {
+      height: 25px;
     }
-  .login-button {
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    background: blue;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer; 
-    outline:0;
-  }
-  
-  .login-lost
-  {
-    text-align:center;
-    margin-bottom:0px;
-  }
-  
-  .login-lost a
-  {
-    color:#666;
-    text-decoration:none;
-    font-size:13px;
-  }
-  
-  
-  
-  .desplegable {
-  position: absolute;
-  top: 0%;
-  z-index:3;
-  }
-  
-  .container {
-    float:right;
-    font-size: small;
-      color: white;
-      background-color: #1A1A1A;
-      width: 100%;
-      height: 30px;
+    
+    .card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e7e7e7;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      overflow: hidden;
+      height: 50px;
+      width: 200px;
+      margin-left: 500px; /* Agrega espacio flexible en la izquierda */
+    }
+    
+    .card::before, .card::after {
       position: absolute;
-      margin-top: 80%;
+      display: flex;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      transition: 0.25s linear;
+      z-index: 1;
+    }
+    
+    .card::before {
+      content: "";
       left: 0;
-    z-index:2;
-  }
-  .container>p {
-  float:right;
-  }	
+      justify-content: flex-end;
+      background-color: #4d60b6;
+    }
+    
+    .card::after {
+      content: "";
+      right: 0;
+      justify-content: flex-start;
+      background-color: #4453a6;
+    }
+    
+    .card:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    
+    .card:hover span {
+      opacity: 0;
+      z-index: -3;
+    }
+    
+    .card:hover::before {
+      opacity: 0.5;
+      transform: translateY(-100%);
+    }
+    
+    .card:hover::after {
+      opacity: 0.5;
+      transform: translateY(100%);
+    }
+    
+    .card span {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: whitesmoke;
+      font-family: 'Fira Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      opacity: 1;
+      transition: opacity 0.25s;
+      z-index: 2;
+    }
+    
+    .card .social-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height: 100%;
+      color: whitesmoke;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.25s;
+    }
+    
+    .card .social-link svg {
+      text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+      transform: scale(1);
+    }
+    
+    .card .social-link:hover {
+      background-color: rgba(249, 244, 255, 0.774);
+      animation: bounce_613 0.4s linear;
+    }
+    
+    @keyframes bounce_613 {
+      40% {
+        transform: scale(1.4);
+      }
+    
+      60% {
+        transform: scale(0.8);
+      }
+    
+      80% {
+        transform: scale(1.2);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+  
