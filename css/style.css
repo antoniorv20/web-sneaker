@@ -646,7 +646,199 @@ footer {
     }
 
     
+/* Estilos generales para pantallas pequeñas y medianas */
+@media screen and (max-width: 899px) {
 
+    /* Estilos para la navegación en pantallas pequeñas */
+    .nav {
+        flex-direction: column; /* Coloca los elementos del menú en una columna */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .nav-item {
+        margin: 1rem 0; /* Espaciado vertical entre los elementos del menú */
+    }
+
+    .nav-link {
+        font-size: 1.6rem; /* Tamaño de la fuente más grande en pantallas pequeñas */
+    }
+
+    /* Estilos para el menú cuando está abierto */
+    .nav-list {
+        transform: translateX(0); /* Muestra la lista de navegación cuando el menú está abierto */
+        position: fixed; /* Fija la posición de la lista */
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: 100vh; /* Altura completa del viewport */
+        background-color: #252525; /* Fondo oscuro para el menú */
+        padding: 4.4rem 2rem; /* Espaciado interno de la lista */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú en pantallas pequeñas */
+    }
+
+    .footer-content {
+        padding: 0 2rem; /* Espaciado horizontal en el footer para pantallas pequeñas */
+    }
+
+    .social-icons {
+        flex-wrap: wrap; /* Permite que los íconos se envuelvan en pantallas pequeñas */
+        justify-content: center; /* Centra los íconos horizontalmente */
+    }
+
+    .social-icons i {
+        font-size: 1.8rem; /* Tamaño de fuente más pequeño para los íconos */
+        padding: .5rem 1.5rem; /* Espaciado interno reducido para los íconos */
+    }
+
+    .news-form {
+        flex-direction: column; /* Coloca el formulario de suscripción en una columna */
+        align-items: center; /* Centra el formulario de suscripción */
+    }
+
+    .news-input {
+        width: calc(100% - 2rem); /* Ajusta el ancho del campo de entrada */
+        margin-bottom: 1rem; /* Espaciado inferior del campo de entrada */
+    }
+
+    .news-btn {
+        margin-left: 0; /* Elimina el espaciado izquierdo del botón en pantallas pequeñas */
+    }
+
+    .card {
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+        margin-top: 1rem; /* Espaciado superior para separar las tarjetas */
+        width: 100%; /* Ancho completo de la tarjeta en pantallas pequeñas */
+        height: auto; /* Ajusta la altura de la tarjeta según su contenido */
+    }
+
+    .image-group {
+        grid-template-columns: 1fr; /* Una sola columna para las imágenes en pantallas pequeñas */
+    }
+
+    .res-info {
+        flex-direction: column; /* Coloca los elementos en una columna */
+    }
+
+    .res-info > div {
+        margin-bottom: 2rem; /* Espaciado inferior entre los elementos */
+    }
+
+    .footer-div {
+        flex-direction: column; /* Coloca los elementos en una columna */
+    }
+}
+
+/* Estilos generales para pantallas de 600px a 899px */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    /* Ajustes adicionales para pantallas de tamaño mediano */
+}
+
+/* Estilos generales para pantallas de al menos 900px de ancho */
+@media screen and (min-width: 900px) {
+    section {
+        padding: 7.9rem; /* Aumenta el espaciado interno de las secciones */
+    }
+
+    .menu-toggle {
+        display: none; /* Oculta el botón de menú en pantallas grandes */
+    }
+
+    .nav {
+        justify-content: space-between; /* Justifica el contenido del menú */
+    }
+
+    .nav-list {
+        position: initial; /* Restablece la posición del menú */
+        width: initial; /* Restablece el ancho del menú */
+        height: initial; /* Restablece la altura del menú */
+        background-color: transparent; /* Fondo transparente para el menú en pantallas grandes */
+        padding: 0; /* Elimina el espaciado interno del menú */
+        justify-content: initial; /* Restablece la justificación del contenido del menú */
+        flex-direction: row; /* Disposición en fila de los elementos del menú */
+        transform: initial; /* Restablece la transformación del menú */
+        transition: initial; /* Restablece la transición del menú */
+    }
+
+    .nav-item {
+        margin: 0 2.4rem; /* Espaciado horizontal entre los elementos del menú */
+    }
+
+    .nav-item:last-child {
+        margin-right: 0; /* Elimina el espaciado derecho en el último elemento del menú */
+    }
+
+    .nav-link {
+        font-size: 1.3rem; /* Tamaño de la fuente de los enlaces del menú */
+    }
+
+    .active {
+        position: relative; /* Posición relativa para los elementos activos */
+    }
+    .active::before {
+        content: ''; /* Crea un pseudo-elemento */
+        position: absolute; /* Posición absoluta para el pseudo-elemento */
+        width: 100%; /* Ancho completo del pseudo-elemento */
+        height: 2px; /* Altura del pseudo-elemento */
+        background-color: #fff; /* Color de fondo del pseudo-elemento */
+        left: 0; /* Posición horizontal del pseudo-elemento */
+        bottom: -3px; /* Posición vertical del pseudo-elemento */
+    }
+
+    .h2-sub {
+        font-size: 3rem; /* Tamaño de la fuente del subtítulo */
+    }
+
+    .fil {
+        font-size: 3rem; /* Tamaño de la fuente del subtítulo */
+    }
+    .head {
+        font-size: 4.7rem; /* Tamaño de la fuente del título */
+        letter-spacing: .8rem; /* Espaciado entre letras */
+    }
+
+    .res-info {
+        display: flex; /* Usa Flexbox para la disposición de los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+    }
+
+    .res-info > div {
+        flex: 1; /* Hace que los elementos dentro de .res-info se expandan igualmente */
+    }
+
+    .pad-rig {
+        padding-right: 7rem; /* Espaciado derecho */
+    }
+
+    .footer-content {
+        max-width: 77.5rem; /* Ancho máximo del contenido del footer */
+        margin: auto; /* Centra el contenido del footer */
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem; /* Ancho máximo de la sección "about" del footer */
+        margin: 0 auto 5.4rem; /* Centra la sección "about" y agrega espaciado inferior */
+    }
+
+    .footer-div {
+        display: flex; /* Usa Flexbox para la disposición de los elementos del footer */
+        justify-content: space-between; /* Justifica el contenido del footer */
+    }
+
+    .social-media,
+    .news-form {
+        width: 100%; /* Ancho completo de los elementos */
+        max-width: 27.3rem; /* Ancho máximo de los elementos */
+        margin: 0 1rem; /* Espaciado horizontal */
+    }
+
+    .news-btn {
+        margin-left: 7.5rem; /* Ajuste del espaciado izquierdo del botón */
+    }
+}
+
+
+    
 }
 
 
