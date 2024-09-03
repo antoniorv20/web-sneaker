@@ -131,3 +131,23 @@ renderizarProductos();
 
 // Carga el carrito desde el localStorage al cargar la página.
 cargarCarrito();
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('open');
+      menuToggle.classList.toggle('open');
+    });
+
+    // Opcional: Cerrar el menú cuando se hace clic fuera de él
+    document.addEventListener('click', function (event) {
+      if (!nav.contains(event.target) && !menuToggle.contains(event.target) && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        menuToggle.classList.remove('open');
+      }
+    });
+  });

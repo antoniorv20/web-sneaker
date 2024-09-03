@@ -5,151 +5,222 @@
 *,
 *::before,
 *::after {
-    margin: 0; /* Elimina el margen por defecto */
-    padding: 0; /* Elimina el relleno por defecto */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+    margin: 0;
+    /* Elimina el margen por defecto */
+    padding: 0;
+    /* Elimina el relleno por defecto */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho y alto total del elemento */
 }
 
 /* Estilos específicos para el elemento html */
 html {
-    font-family: 'Poppins', sans-serif; /* Define la fuente principal para todo el documento */
-    font-size: 10px; /* Tamaño de fuente base para el cálculo de tamaños en rem */
-    color: #000; /* Color del texto por defecto */
-    scroll-behavior: smooth; /* Hacer el desplazamiento suave */
+    font-family: 'Poppins', sans-serif;
+    /* Define la fuente principal para todo el documento */
+    font-size: 10px;
+    /* Tamaño de fuente base para el cálculo de tamaños en rem */
+    color: #000;
+    /* Color del texto por defecto */
+    scroll-behavior: smooth;
+    /* Hacer el desplazamiento suave */
 }
 
 /* Estilos para el body */
 body {
-    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    overflow-x: hidden;
+    /* Oculta el desbordamiento horizontal */
 }
 
 /* Estilos para todos los elementos <section> */
 section {
-    padding: 3.9rem 0; /* Espaciado vertical */
-    overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+    padding: 3.9rem 0;
+    /* Espaciado vertical */
+    overflow: hidden;
+    /* Oculta cualquier contenido que desborde el contenedor */
 }
 
 /* Estilos para las imágenes */
 img {
-    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
-    max-width: 100%; /* Asegura que la imagen no se expanda más allá del ancho del contenedor */
+    width: 100%;
+    /* Asegura que la imagen ocupe el ancho completo del contenedor */
+    max-width: 100%;
+    /* Asegura que la imagen no se expanda más allá del ancho del contenedor */
 }
 
 /* Estilos para los enlaces */
 a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
 }
 
 /* Estilos para los párrafos */
 p {
-    font-size: 1.6rem; /* Tamaño de la fuente del párrafo */
+    font-size: 1.6rem;
+    /* Tamaño de la fuente del párrafo */
 }
 
 /* Estilos para el contenedor principal */
 .container {
-    width: 100%; /* Ancho completo del contenedor */
-    max-width: 122.5rem; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 0 2.4rem; /* Espaciado horizontal */
+    width: 100%;
+    /* Ancho completo del contenedor */
+    max-width: 122.5rem;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding: 0 2.4rem;
+    /* Espaciado horizontal */
 }
 
 
 /* Estilos para el header */
 header {
-    width: 100%; /* Ancho completo del header */
-    position: absolute; /* Posición absoluta para superponerlo sobre otros elementos */
-    top: 0; /* Coloca el header en la parte superior */
-    left: 0; /* Coloca el header en el borde izquierdo */
-    z-index: 1; /* Asegura que el header esté por encima de otros elementos */
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent); /* Degradado de fondo para el header */
+    width: 100%;
+    /* Ancho completo del header */
+    position: absolute;
+    /* Posición absoluta para superponerlo sobre otros elementos */
+    top: 0;
+    /* Coloca el header en la parte superior */
+    left: 0;
+    /* Coloca el header en el borde izquierdo */
+    z-index: 1;
+    /* Asegura que el header esté por encima de otros elementos */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+    /* Degradado de fondo para el header */
 }
 
 /* Estilos para la navegación */
 .nav {
-    height: 7.2rem; /* Altura de la barra de navegación */
-    display: flex; /* Usa Flexbox para la disposición de los elementos */
-    align-items: center; /* Centra verticalmente los elementos de navegación */
-    justify-content: center; /* Centra horizontalmente los elementos de navegación */
+    height: 7.2rem;
+    /* Altura de la barra de navegación */
+    display: flex;
+    /* Usa Flexbox para la disposición de los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos de navegación */
+    justify-content: center;
+    /* Centra horizontalmente los elementos de navegación */
 }
 
 /* Estilos para el botón de menú */
 .menu-toggle {
-    color: #fff; /* Color del ícono del menú */
-    font-size: 2.2rem; /* Tamaño del ícono del menú */
-    position: absolute; /* Posición absoluta para colocarlo en un lugar específico */
-    top: 50%; /* Centra verticalmente el ícono del menú */
-    transform: translateY(-50%); /* Ajusta la posición verticalmente al centro */
-    right: 2.5rem; /* Espaciado desde el borde derecho */
-    cursor: pointer; /* Muestra un cursor de puntero cuando se pasa sobre el ícono */
-    z-index: 1500; /* Asegura que el ícono del menú esté sobre otros elementos */
+    color: #fff;
+    /* Color del ícono del menú */
+    font-size: 2.2rem;
+    /* Tamaño del ícono del menú */
+    position: absolute;
+    /* Posición absoluta para colocarlo en un lugar específico */
+    top: 50%;
+    /* Centra verticalmente el ícono del menú */
+    transform: translateY(-50%);
+    /* Ajusta la posición verticalmente al centro */
+    right: 2.5rem;
+    /* Espaciado desde el borde derecho */
+    cursor: pointer;
+    /* Muestra un cursor de puntero cuando se pasa sobre el ícono */
+    z-index: 1500;
+    /* Asegura que el ícono del menú esté sobre otros elementos */
 }
 
 /* Estilos específicos para el ícono de cerrar (X) en el menú */
 .fa-times {
-    display: none; /* Oculta el ícono por defecto */
+    display: none;
+    /* Oculta el ícono por defecto */
 }
 
 /* Estilos para la lista de navegación */
 .nav-list {
-    list-style: none; /* Elimina los puntos de la lista */
-    position: fixed; /* Fija la posición de la lista */
-    top: 0; /* Coloca la lista en la parte superior */
-    left: 0; /* Coloca la lista en el borde izquierdo */
-    width: 80%; /* Ancho de la lista */
-    height: 100vh; /* Altura completa de la ventana del navegador */
-    background-color: #252525; /* Color de fondo de la lista */
-    padding: 4.4rem; /* Espaciado interno de la lista */
-    display: flex; /* Usa Flexbox para la disposición de los elementos */
-    flex-direction: column; /* Dispone los elementos en una columna */
-    justify-content: space-around; /* Espacia los elementos uniformemente */
-    z-index: 1250; /* Asegura que la lista esté por encima de otros elementos */
-    transform: translateX(-100%); /* Oculta la lista fuera del viewport */
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    position: fixed;
+    /* Fija la posición de la lista */
+    top: 0;
+    /* Coloca la lista en la parte superior */
+    left: 0;
+    /* Coloca la lista en el borde izquierdo */
+    width: 80%;
+    /* Ancho de la lista */
+    height: 100vh;
+    /* Altura completa de la ventana del navegador */
+    background-color: #252525;
+    /* Color de fondo de la lista */
+    padding: 4.4rem;
+    /* Espaciado interno de la lista */
+    display: flex;
+    /* Usa Flexbox para la disposición de los elementos */
+    flex-direction: column;
+    /* Dispone los elementos en una columna */
+    justify-content: space-around;
+    /* Espacia los elementos uniformemente */
+    z-index: 1250;
+    /* Asegura que la lista esté por encima de otros elementos */
+    transform: translateX(-100%);
+    /* Oculta la lista fuera del viewport */
 }
 
 /* Estilos para la superposición de fondo cuando el menú está abierto */
 .nav::before {
-    content: ''; /* Crea un pseudo-elemento sin contenido */
-    position: fixed; /* Fija la posición de la superposición */
-    top: 0; /* Coloca la superposición en la parte superior */
-    left: 0; /* Coloca la superposición en el borde izquierdo */
-    width: 100vw; /* Ancho completo de la ventana del navegador */
-    height: 100vh; /* Altura completa de la ventana del navegador */
-    background-color: rgba(0, 0, 0, .8); /* Color de fondo semi-transparente */
-    z-index: 1000; /* Asegura que la superposición esté por debajo de la lista pero encima de otros elementos */
-    opacity: 0; /* Hace que la superposición sea invisible por defecto */
-    transform: scale(0); /* Escala la superposición a 0, haciéndola invisible */
-    transition: opacity .5s; /* Transición de opacidad para suavizar el cambio */
+    content: '';
+    /* Crea un pseudo-elemento sin contenido */
+    position: fixed;
+    /* Fija la posición de la superposición */
+    top: 0;
+    /* Coloca la superposición en la parte superior */
+    left: 0;
+    /* Coloca la superposición en el borde izquierdo */
+    width: 100vw;
+    /* Ancho completo de la ventana del navegador */
+    height: 100vh;
+    /* Altura completa de la ventana del navegador */
+    background-color: rgba(0, 0, 0, .8);
+    /* Color de fondo semi-transparente */
+    z-index: 1000;
+    /* Asegura que la superposición esté por debajo de la lista pero encima de otros elementos */
+    opacity: 0;
+    /* Hace que la superposición sea invisible por defecto */
+    transform: scale(0);
+    /* Escala la superposición a 0, haciéndola invisible */
+    transition: opacity .5s;
+    /* Transición de opacidad para suavizar el cambio */
 }
 
 /* Estilos cuando el menú está abierto */
 .open .fa-times {
-    display: block; /* Muestra el ícono de cerrar cuando el menú está abierto */
+    display: block;
+    /* Muestra el ícono de cerrar cuando el menú está abierto */
 }
 
 .open .fa-bars {
-    display: none; /* Oculta el ícono de menú cuando el menú está abierto */
+    display: none;
+    /* Oculta el ícono de menú cuando el menú está abierto */
 }
 
 .open .nav-list {
-    transform: translateX(0); /* Muestra la lista de navegación cuando el menú está abierto */
+    transform: translateX(0);
+    /* Muestra la lista de navegación cuando el menú está abierto */
 }
 
 .open .nav::before {
-    opacity: 1; /* Muestra la superposición cuando el menú está abierto */
-    transform: scale(1); /* Escala la superposición a su tamaño completo */
+    opacity: 1;
+    /* Muestra la superposición cuando el menú está abierto */
+    transform: scale(1);
+    /* Escala la superposición a su tamaño completo */
 }
 
 /* Estilos para el logo */
 .logo {
-    color: #fff; /* Color del texto del logo */
-    margin-top: 2rem; /* Espaciado superior del logo */
-    font-size: 5.5rem; /* Tamaño de la fuente del logo */
-    font-weight: 600; /* Peso de la fuente del logo */
+    color: #fff;
+    /* Color del texto del logo */
+    margin-top: 2rem;
+    /* Espaciado superior del logo */
+    font-size: 5.5rem;
+    /* Tamaño de la fuente del logo */
+    font-weight: 600;
+    /* Peso de la fuente del logo */
 }
 
 /* Estilos para los elementos de navegación */
 .nav-item {
-    border-bottom: 2px solid rgba(255, 255, 255, .3); /* Borde inferior para los ítems de navegación */
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    /* Borde inferior para los ítems de navegación */
 }
 
 /* Selector más específico */
@@ -160,385 +231,387 @@ header .nav .nav-link {
 
 /* Estilos para los enlaces de navegación */
 .nav-link {
-    display: block; /* Hace que el enlace ocupe el espacio completo del ítem de navegación */
-    color: #fff; /* Color del texto del enlace */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    margin-right: -2px; /* Ajuste negativo para alinear los enlaces */
+    display: block;
+    /* Hace que el enlace ocupe el espacio completo del ítem de navegación */
+    color: #fff;
+    /* Color del texto del enlace */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+    margin-right: -2px;
+    /* Ajuste negativo para alinear los enlaces */
 }
 
 /* Estilos para el enlace activo en la navegación */
 .nav-link:hover {
-    color: #ffc845; /* Cambia el color del enlace al pasar el ratón */
+    color: #ffc845;
+    /* Cambia el color del enlace al pasar el ratón */
 }
 
 
 
 /* Estilos para la sección hero */
 .hero {
-    width: 100%; /* Ancho completo de la sección */
-    height: 100vh; /* Altura completa de la ventana del navegador */
-    background: url("/images/gym-composition-with-sport-elements.jpg") center no-repeat; /* Imagen de fondo centrada */
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    display: flex; /* Usa Flexbox para centrar el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
-    text-align: center; /* Centra el texto */
+    width: 100%;
+    /* Ancho completo de la sección */
+    height: 100vh;
+    /* Altura completa de la ventana del navegador */
+    background: url("/images/gym-composition-with-sport-elements.jpg") center no-repeat;
+    /* Imagen de fondo centrada */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    display: flex;
+    /* Usa Flexbox para centrar el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    text-align: center;
+    /* Centra el texto */
 }
 
 /* Estilos para el subtítulo en la sección hero */
 .h2-sub {
-    font-size: 3rem; /* Tamaño de la fuente del subtítulo */
-    font-family: 'Poppins', sans-serif; /* Fuente del subtítulo */
-    color: #3bcc75; /* Color del texto del subtítulo */
-    font-weight: 600; /* Peso de la fuente del subtítulo */
-    line-height: .4; /* Altura de línea para el subtítulo */
+    font-size: 3rem;
+    /* Tamaño de la fuente del subtítulo */
+    font-family: 'Poppins', sans-serif;
+    /* Fuente del subtítulo */
+    color: #3bcc75;
+    /* Color del texto del subtítulo */
+    font-weight: 600;
+    /* Peso de la fuente del subtítulo */
+    line-height: .4;
+    /* Altura de línea para el subtítulo */
 }
 
 /* Estilos para el texto con clase "fil" */
 .fil {
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    font-size: 3rem; /* Tamaño de la fuente del texto */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    font-size: 3rem;
+    /* Tamaño de la fuente del texto */
 }
 
 /* Estilos para el título en la sección hero */
 .head {
-    color: #fff; /* Color del texto del título */
-    font-size: 3.7rem; /* Tamaño de la fuente del título */
-    font-family: 'Poppins', sans-serif; /* Fuente del título */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    font-weight: 900; /* Peso de la fuente del título */
-    letter-spacing: .5rem; /* Espaciado entre letras */
+    color: #fff;
+    /* Color del texto del título */
+    font-size: 3.7rem;
+    /* Tamaño de la fuente del título */
+    font-family: 'Poppins', sans-serif;
+    /* Fuente del título */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    font-weight: 900;
+    /* Peso de la fuente del título */
+    letter-spacing: .5rem;
+    /* Espaciado entre letras */
 }
 
 /* Estilos para los círculos en la sección hero */
 .circle {
-    font-size: 1.5rem; /* Tamaño de la fuente del círculo */
-    color: #3bcc75; /* Color del texto del círculo */
-    margin: 0 1.6rem; /* Espaciado horizontal de los círculos */
+    font-size: 1.5rem;
+    /* Tamaño de la fuente del círculo */
+    color: #3bcc75;
+    /* Color del texto del círculo */
+    margin: 0 1.6rem;
+    /* Espaciado horizontal de los círculos */
 }
 
 /* Estilos para el subtítulo descriptivo en la sección hero */
 .he-des h5 {
-    color: #fff; /* Color del texto */
-    font-size: 2.4rem; /* Tamaño de la fuente */
-    font-weight: 100; /* Peso de la fuente */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    margin-bottom: 1.2rem; /* Espaciado inferior */
-    letter-spacing: 3px; /* Espaciado entre letras */
-    margin-right: -3px; /* Ajuste negativo para alinear el texto */
+    color: #fff;
+    /* Color del texto */
+    font-size: 2.4rem;
+    /* Tamaño de la fuente */
+    font-weight: 100;
+    /* Peso de la fuente */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    margin-bottom: 1.2rem;
+    /* Espaciado inferior */
+    letter-spacing: 3px;
+    /* Espaciado entre letras */
+    margin-right: -3px;
+    /* Ajuste negativo para alinear el texto */
 }
 
 /* Estilos generales para los botones */
 .btn {
-    display: inline-block; /* Hace que el botón ocupe solo el espacio necesario */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    margin-right: -2px; /* Ajuste negativo para alinear los botones */
+    display: inline-block;
+    /* Hace que el botón ocupe solo el espacio necesario */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+    margin-right: -2px;
+    /* Ajuste negativo para alinear los botones */
 }
 
 /* Estilos específicos para el botón de llamada a la acción */
 .cta-btn {
-    font-size: 1.1rem; /* Tamaño de la fuente del botón */
-    background-color: #ffc845; /* Color de fondo del botón */
-    padding: 1.5rem 3rem; /* Espaciado interno del botón */
-    color: #fff; /* Color del texto del botón */
-    border-radius: .4rem; /* Bordes redondeados del botón */
+    font-size: 1.1rem;
+    /* Tamaño de la fuente del botón */
+    background-color: #ffc845;
+    /* Color de fondo del botón */
+    padding: 1.5rem 3rem;
+    /* Espaciado interno del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    border-radius: .4rem;
+    /* Bordes redondeados del botón */
 }
 
 /* Estilos para el botón de llamada a la acción cuando se pasa el ratón o está enfocado */
 .cta-btn:hover,
 .cta-btn:focus {
-    color: #fff; /* Color del texto */
-    background-color: #3bcc75; /* Color de fondo del botón al pasar el ratón */
+    color: #fff;
+    /* Color del texto */
+    background-color: #3bcc75;
+    /* Color de fondo del botón al pasar el ratón */
 }
 
 /* Estilos generales para el contenido global */
 .global {
-    text-align: center; /* Centra el texto */
-    margin-top: 3.9rem; /* Espaciado superior */
+    text-align: center;
+    /* Centra el texto */
+    margin-top: 3.9rem;
+    /* Espaciado superior */
 }
 
 /* Estilos específicos para la clase "dis-sto" */
 .dis-sto .global {
-    margin-top: 6.9rem; /* Aumenta el espaciado superior en la clase "dis-sto" */
+    margin-top: 6.9rem;
+    /* Aumenta el espaciado superior en la clase "dis-sto" */
 }
 
 /* Estilos para los círculos dentro de la clase global */
 .global .circle {
-    color: #3bcc75; /* Color del texto */
-    margin: 2.4rem 0; /* Espaciado vertical */
+    color: #3bcc75;
+    /* Color del texto */
+    margin: 2.4rem 0;
+    /* Espaciado vertical */
 }
 
 /* Estilos para el texto oscuro en la clase "hea-dark" */
 .hea-dark {
-    color: #252525; /* Color del texto */
-    letter-spacing: .7rem; /* Espaciado entre letras */
-    margin-right: -.7rem; /* Ajuste negativo para alinear el texto */
+    color: #252525;
+    /* Color del texto */
+    letter-spacing: .7rem;
+    /* Espaciado entre letras */
+    margin-right: -.7rem;
+    /* Ajuste negativo para alinear el texto */
 }
 
 /* Estilos para el subtítulo en la clase global */
 .global .h2-sub {
-    letter-spacing: -1px; /* Reduce el espaciado entre letras */
-    line-height: .42; /* Altura de línea para el subtítulo */
+    letter-spacing: -1px;
+    /* Reduce el espaciado entre letras */
+    line-height: .42;
+    /* Altura de línea para el subtítulo */
 }
 
 /* Estilos para la sección de información de recursos */
 .res-info {
-    text-align: center; /* Centra el texto */
+    text-align: center;
+    /* Centra el texto */
 }
 
 /* Estilos para la descripción de recursos */
 .res-des {
-    margin-bottom: 3rem; /* Espaciado inferior */
+    margin-bottom: 3rem;
+    /* Espaciado inferior */
 }
 
 /* Estilos para los párrafos dentro de la descripción de recursos */
 .res-des p {
-    line-height: 1.6; /* Altura de línea para los párrafos */
-    margin-bottom: 2.4rem; /* Espaciado inferior */
+    line-height: 1.6;
+    /* Altura de línea para los párrafos */
+    margin-bottom: 2.4rem;
+    /* Espaciado inferior */
 }
 
 /* Estilos para la sección de menú */
 .taste {
-    background: url("/images/nuevas-llegadas.jpg") center no-repeat; /* Imagen de fondo centrada */
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background: url("/images/nuevas-llegadas.jpg") center no-repeat;
+    /* Imagen de fondo centrada */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
 }
 
 /* Estilos para los elementos de menú */
 .bt {
-    min-height: 65vh; /* Altura mínima del contenedor */
-    display: flex; /* Usa Flexbox para la disposición de los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    min-height: 65vh;
+    /* Altura mínima del contenedor */
+    display: flex;
+    /* Usa Flexbox para la disposición de los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
 }
 
 /* Estilos para el grupo de imágenes */
 .image-group {
-    display: grid; /* Usa Grid Layout para la disposición de las imágenes */
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
-    grid-gap: 1.5rem; /* Espaciado entre las imágenes */
+    display: grid;
+    /* Usa Grid Layout para la disposición de las imágenes */
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas de igual ancho */
+    grid-gap: 1.5rem;
+    /* Espaciado entre las imágenes */
 }
 
 /* Estilos específicos para la clase "disco" */
 .disco .res-des {
-    padding-top: 3rem; /* Espaciado superior */
-    margin-bottom: 0; /* Elimina el espaciado inferior */
+    padding-top: 3rem;
+    /* Espaciado superior */
+    margin-bottom: 0;
+    /* Elimina el espaciado inferior */
 }
 
 /* Estilos para el fondo de la clase "pb" */
 .pb {
-    background: url("/images/coleccion.jpg") center no-repeat; /* Imagen de fondo centrada */
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background: url("/images/coleccion.jpg") center no-repeat;
+    /* Imagen de fondo centrada */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
 }
 
 /* Estilos para el footer */
 footer {
-    padding: 7.9rem 0; /* Espaciado vertical */
-    background-color: #121212; /* Color de fondo del footer */
-    color: #fff; /* Color del texto del footer */
-    text-align: center; /* Centra el texto */
-    position: relative; /* Posición relativa para colocación de elementos internos */
+    padding: 7.9rem 0;
+    /* Espaciado vertical */
+    background-color: #121212;
+    /* Color de fondo del footer */
+    color: #fff;
+    /* Color del texto del footer */
+    text-align: center;
+    /* Centra el texto */
+    position: relative;
+    /* Posición relativa para colocación de elementos internos */
 }
 
 /* Estilos para el contenido del footer */
 .footer-content {
-    overflow: hidden; /* Oculta cualquier contenido desbordado */
+    overflow: hidden;
+    /* Oculta cualquier contenido desbordado */
 }
 
 /* Estilos para el título en el footer */
 .footer-content h4 {
-    font-size: 1.9rem; /* Tamaño de la fuente del título */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    font-weight: 100; /* Peso de la fuente */
-    letter-spacing: 3px; /* Espaciado entre letras */
-    margin-bottom: 3rem; /* Espaciado inferior */
+    font-size: 1.9rem;
+    /* Tamaño de la fuente del título */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    font-weight: 100;
+    /* Peso de la fuente */
+    letter-spacing: 3px;
+    /* Espaciado entre letras */
+    margin-bottom: 3rem;
+    /* Espaciado inferior */
 }
 
 /* Estilos para los círculos dentro del contenido del footer */
 .footer-content .circle {
-    margin: 2.4rem 0; /* Espaciado vertical */
+    margin: 2.4rem 0;
+    /* Espaciado vertical */
 }
 
 /* Estilos para la sección "about" en el footer */
 .footer-content-about {
-    margin-bottom: 5.4rem; /* Espaciado inferior */
+    margin-bottom: 5.4rem;
+    /* Espaciado inferior */
 }
 
 /* Estilos para los párrafos dentro de la sección "about" del footer */
 .footer-content-about p {
-    line-height: 2; /* Altura de línea para los párrafos */
+    line-height: 2;
+    /* Altura de línea para los párrafos */
 }
 
 /* Estilos para la lista de íconos sociales */
 .social-icons {
-    list-style: none; /* Elimina los puntos de la lista */
-    margin-bottom: 5.4rem; /* Espaciado inferior */
-    display: flex; /* Usa Flexbox para la disposición de los íconos */
-    justify-content: center; /* Centra horizontalmente los íconos */
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    margin-bottom: 5.4rem;
+    /* Espaciado inferior */
+    display: flex;
+    /* Usa Flexbox para la disposición de los íconos */
+    justify-content: center;
+    /* Centra horizontalmente los íconos */
 }
 
 /* Estilos para los íconos sociales */
 .social-icons i {
-    font-size: 2rem; /* Tamaño de la fuente de los íconos */
-    color: #3bcc75; /* Color del ícono */
-    padding: .8rem 2rem; /* Espaciado interno del ícono */
+    font-size: 2rem;
+    /* Tamaño de la fuente de los íconos */
+    color: #3bcc75;
+    /* Color del ícono */
+    padding: .8rem 2rem;
+    /* Espaciado interno del ícono */
 }
+
+.social-icons i {
+    font-size: 2rem;
+    color: var(--color-primary);
+    padding: .8rem 2rem;
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    color: var(--color-secondary);
+}
+
 
 /* Estilos para los íconos sociales al pasar el ratón o estar enfocados */
 .social-icons i:hover,
 .social-icons i:focus {
-    color: #ffc845; /* Cambia el color del ícono */
+    color: #ffc845;
+    /* Cambia el color del ícono */
 }
 
 /* Estilos para el formulario de suscripción al boletín */
 .news-form {
-    width: 100%; /* Ancho completo del formulario */
-    position: relative; /* Posición relativa para colocación de elementos internos */
-    display: flex; /* Usa Flexbox para la disposición de los elementos */
-    justify-content: center; /* Centra horizontalmente el formulario */
+    width: 100%;
+    /* Ancho completo del formulario */
+    position: relative;
+    /* Posición relativa para colocación de elementos internos */
+    display: flex;
+    /* Usa Flexbox para la disposición de los elementos */
+    justify-content: center;
+    /* Centra horizontalmente el formulario */
 }
 
 /* Estilos para el campo de entrada del formulario de suscripción */
 .news-input {
-    width: 100%; /* Ancho completo del campo de entrada */
-    max-width: 25rem; /* Ancho máximo del campo de entrada */
-    padding: 1rem; /* Espaciado interno del campo de entrada */
-    border-radius: .4rem; /* Bordes redondeados del campo de entrada */
+    width: 100%;
+    /* Ancho completo del campo de entrada */
+    max-width: 25rem;
+    /* Ancho máximo del campo de entrada */
+    padding: 1rem;
+    /* Espaciado interno del campo de entrada */
+    border-radius: .4rem;
+    /* Bordes redondeados del campo de entrada */
 }
 
 /* Estilos para el botón del formulario de suscripción */
 .news-btn {
-    background: transparent; /* Fondo transparente del botón */
-    border: none; /* Sin borde */
-    color: #252525; /* Color del texto del botón */
-    cursor: pointer; /* Muestra un cursor de puntero cuando se pasa sobre el botón */
-    font-size: 1.6rem; /* Tamaño de la fuente del botón */
-    padding: 1px .6rem; /* Espaciado interno del botón */
-    position: absolute; /* Posición absoluta para colocarlo en un lugar específico */
-    top: 30%; /* Posición vertical del botón */
-    margin-left: 20.5rem; /* Espaciado desde el borde izquierdo */
+    background: transparent;
+    /* Fondo transparente del botón */
+    border: none;
+    /* Sin borde */
+    color: #252525;
+    /* Color del texto del botón */
+    cursor: pointer;
+    /* Muestra un cursor de puntero cuando se pasa sobre el botón */
+    font-size: 1.6rem;
+    /* Tamaño de la fuente del botón */
+    padding: 1px .6rem;
+    /* Espaciado interno del botón */
+    position: absolute;
+    /* Posición absoluta para colocarlo en un lugar específico */
+    top: 30%;
+    /* Posición vertical del botón */
+    margin-left: 20.5rem;
+    /* Espaciado desde el borde izquierdo */
 }
-
-
-    /* From Uiverse.io by G4b413l */ 
-    .card svg {
-        height: 25px;
-      }
-      
-      .card {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #e7e7e7;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        overflow: hidden;
-        height: 50px;
-        width: 200px;
-        margin-left: 300px; /* Agrega espacio flexible en la izquierda */
-      }
-      
-      .card::before, .card::after {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        width: 50%;
-        height: 100%;
-        transition: 0.25s linear;
-        z-index: 1;
-      }
-      
-      .card::before {
-        content: "";
-        left: 0;
-        justify-content: flex-end;
-        background-color: #4d60b6;
-      }
-      
-      .card::after {
-        content: "";
-        right: 0;
-        justify-content: flex-start;
-        background-color: #4453a6;
-      }
-      
-      .card:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      }
-      
-      .card:hover span {
-        opacity: 0;
-        z-index: -3;
-      }
-      
-      .card:hover::before {
-        opacity: 0.5;
-        transform: translateY(-100%);
-      }
-      
-      .card:hover::after {
-        opacity: 0.5;
-        transform: translateY(100%);
-      }
-      
-      .card span {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        color: whitesmoke;
-        font-family: 'Fira Mono', monospace;
-        font-size: 24px;
-        font-weight: 700;
-        opacity: 1;
-        transition: opacity 0.25s;
-        z-index: 2;
-      }
-      
-      .card .social-link {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 100%;
-        color: whitesmoke;
-        font-size: 24px;
-        text-decoration: none;
-        transition: 0.25s;
-      }
-      
-      .card .social-link svg {
-        text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
-        transform: scale(1);
-      }
-      
-      .card .social-link:hover {
-        background-color: rgba(249, 244, 255, 0.774);
-        animation: bounce_613 0.4s linear;
-      }
-      
-      @keyframes bounce_613 {
-        40% {
-          transform: scale(1.4);
-        }
-      
-        60% {
-          transform: scale(0.8);
-        }
-      
-        80% {
-          transform: scale(1.2);
-        }
-      
-        100% {
-          transform: scale(1);
-        }
-      }
-    
-    
 
 
 
@@ -546,302 +619,251 @@ footer {
 @media screen and (min-width: 900px) {
 
     section {
-        padding: 7.9rem; /* Aumenta el espaciado interno de las secciones */
+        padding: 7.9rem;
+        /* Aumenta el espaciado interno de las secciones */
     }
 
     .menu-toggle {
-        display: none; /* Oculta el botón de menú en pantallas grandes */
+        display: none;
+        /* Oculta el botón de menú en pantallas grandes */
     }
 
     .nav {
-        justify-content: space-between; /* Justifica el contenido del menú */
+        justify-content: space-between;
+        /* Justifica el contenido del menú */
     }
 
     .nav-list {
-        position: initial; /* Restablece la posición del menú */
-        width: initial; /* Restablece el ancho del menú */
-        height: initial; /* Restablece la altura del menú */
-        background-color: transparent; /* Fondo transparente para el menú en pantallas grandes */
-        padding: 0; /* Elimina el espaciado interno del menú */
-        justify-content: initial; /* Restablece la justificación del contenido del menú */
-        flex-direction: row; /* Disposición en fila de los elementos del menú */
-        transform: initial; /* Restablece la transformación del menú */
-        transition: initial; /* Restablece la transición del menú */
+        position: initial;
+        /* Restablece la posición del menú */
+        width: initial;
+        /* Restablece el ancho del menú */
+        height: initial;
+        /* Restablece la altura del menú */
+        background-color: transparent;
+        /* Fondo transparente para el menú en pantallas grandes */
+        padding: 0;
+        /* Elimina el espaciado interno del menú */
+        justify-content: initial;
+        /* Restablece la justificación del contenido del menú */
+        flex-direction: row;
+        /* Disposición en fila de los elementos del menú */
+        transform: initial;
+        /* Restablece la transformación del menú */
+        transition: initial;
+        /* Restablece la transición del menú */
     }
 
     .nav-item {
-        margin: 0 2.4rem; /* Espaciado horizontal entre los elementos del menú */
+        margin: 0 2.4rem;
+        /* Espaciado horizontal entre los elementos del menú */
     }
 
     .nav-item:last-child {
-        margin-right: 0; /* Elimina el espaciado derecho en el último elemento del menú */
+        margin-right: 0;
+        /* Elimina el espaciado derecho en el último elemento del menú */
     }
 
     .nav-link {
-        font-size: 1.3rem; /* Tamaño de la fuente de los enlaces del menú */
+        font-size: 1.3rem;
+        /* Tamaño de la fuente de los enlaces del menú */
     }
 
     .active {
-        position: relative; /* Posición relativa para los elementos activos */
+        position: relative;
+        /* Posición relativa para los elementos activos */
     }
+
     .active::before {
-        content: ''; /* Crea un pseudo-elemento */
-        position: absolute; /* Posición absoluta para el pseudo-elemento */
-        width: 100%; /* Ancho completo del pseudo-elemento */
-        height: 2px; /* Altura del pseudo-elemento */
-        background-color: #fff; /* Color de fondo del pseudo-elemento */
-        left: 0; /* Posición horizontal del pseudo-elemento */
-        bottom: -3px; /* Posición vertical del pseudo-elemento */
+        content: '';
+        /* Crea un pseudo-elemento */
+        position: absolute;
+        /* Posición absoluta para el pseudo-elemento */
+        width: 100%;
+        /* Ancho completo del pseudo-elemento */
+        height: 2px;
+        /* Altura del pseudo-elemento */
+        background-color: #fff;
+        /* Color de fondo del pseudo-elemento */
+        left: 0;
+        /* Posición horizontal del pseudo-elemento */
+        bottom: -3px;
+        /* Posición vertical del pseudo-elemento */
     }
 
     .h2-sub {
-        font-size: 3rem; /* Tamaño de la fuente del subtítulo */
+        font-size: 3rem;
+        /* Tamaño de la fuente del subtítulo */
     }
 
     .fil {
-        font-size: 3rem; /* Tamaño de la fuente del subtítulo */
+        font-size: 3rem;
+        /* Tamaño de la fuente del subtítulo */
     }
+
     .head {
-        font-size: 4.7rem; /* Tamaño de la fuente del título */
-        letter-spacing: .8rem; /* Espaciado entre letras */
+        font-size: 4.7rem;
+        /* Tamaño de la fuente del título */
+        letter-spacing: .8rem;
+        /* Espaciado entre letras */
     }
 
     .res-info {
-        display: flex; /* Usa Flexbox para la disposición de los elementos */
-        align-items: center; /* Centra verticalmente los elementos */
+        display: flex;
+        /* Usa Flexbox para la disposición de los elementos */
+        align-items: center;
+        /* Centra verticalmente los elementos */
     }
 
-    .res-info > div {
-        flex: 1; /* Hace que los elementos dentro de .res-info se expandan igualmente */
+    .res-info>div {
+        flex: 1;
+        /* Hace que los elementos dentro de .res-info se expandan igualmente */
     }
 
     .pad-rig {
-        padding-right: 7rem; /* Espaciado derecho */
+        padding-right: 7rem;
+        /* Espaciado derecho */
     }
 
     .footer-content {
-        max-width: 77.5rem; /* Ancho máximo del contenido del footer */
-        margin: auto; /* Centra el contenido del footer */
+        max-width: 77.5rem;
+        /* Ancho máximo del contenido del footer */
+        margin: auto;
+        /* Centra el contenido del footer */
     }
 
     .footer-content-about {
-        max-width: 51.3rem; /* Ancho máximo de la sección "about" del footer */
-        margin: 0 auto 5.4rem; /* Centra la sección "about" y agrega espaciado inferior */
+        max-width: 51.3rem;
+        /* Ancho máximo de la sección "about" del footer */
+        margin: 0 auto 5.4rem;
+        /* Centra la sección "about" y agrega espaciado inferior */
     }
 
     .footer-div {
-        display: flex; /* Usa Flexbox para la disposición de los elementos del footer */
-        justify-content: space-between; /* Justifica el contenido del footer */
+        display: flex;
+        /* Usa Flexbox para la disposición de los elementos del footer */
+        justify-content: space-between;
+        /* Justifica el contenido del footer */
     }
 
     .social-media,
     .news-form {
-        width: 100%; /* Ancho completo de los elementos */
-        max-width: 27.3rem; /* Ancho máximo de los elementos */
-        margin: 0 1rem; /* Espaciado horizontal */
+        width: 100%;
+        /* Ancho completo de los elementos */
+        max-width: 27.3rem;
+        /* Ancho máximo de los elementos */
+        margin: 0 1rem;
+        /* Espaciado horizontal */
     }
 
     .news-btn {
-        margin-left: 7.5rem; /* Ajuste del espaciado izquierdo del botón */
+        margin-left: 7.5rem;
+        /* Ajuste del espaciado izquierdo del botón */
     }
 
-    
-/* Estilos generales para pantallas pequeñas y medianas */
-@media screen and (max-width: 899px) {
-
-    /* Estilos para la navegación en pantallas pequeñas */
-    .nav {
-        flex-direction: column; /* Coloca los elementos del menú en una columna */
-        align-items: flex-start; /* Alinea los elementos al inicio */
-    }
-
-    .nav-item {
-        margin: 1rem 0; /* Espaciado vertical entre los elementos del menú */
-    }
-
-    .nav-link {
-        font-size: 1.6rem; /* Tamaño de la fuente más grande en pantallas pequeñas */
-    }
-
-    /* Estilos para el menú cuando está abierto */
-    .nav-list {
-        transform: translateX(0); /* Muestra la lista de navegación cuando el menú está abierto */
-        position: fixed; /* Fija la posición de la lista */
-        width: 100%; /* Ancho completo en pantallas pequeñas */
-        height: 100vh; /* Altura completa del viewport */
-        background-color: #252525; /* Fondo oscuro para el menú */
-        padding: 4.4rem 2rem; /* Espaciado interno de la lista */
-    }
-
-    .menu-toggle {
-        display: block; /* Muestra el botón de menú en pantallas pequeñas */
-    }
-
-    .footer-content {
-        padding: 0 2rem; /* Espaciado horizontal en el footer para pantallas pequeñas */
-    }
-
-    .social-icons {
-        flex-wrap: wrap; /* Permite que los íconos se envuelvan en pantallas pequeñas */
-        justify-content: center; /* Centra los íconos horizontalmente */
-    }
-
-    .social-icons i {
-        font-size: 1.8rem; /* Tamaño de fuente más pequeño para los íconos */
-        padding: .5rem 1.5rem; /* Espaciado interno reducido para los íconos */
-    }
-
-    .news-form {
-        flex-direction: column; /* Coloca el formulario de suscripción en una columna */
-        align-items: center; /* Centra el formulario de suscripción */
-    }
-
-    .news-input {
-        width: calc(100% - 2rem); /* Ajusta el ancho del campo de entrada */
-        margin-bottom: 1rem; /* Espaciado inferior del campo de entrada */
-    }
-
-    .news-btn {
-        margin-left: 0; /* Elimina el espaciado izquierdo del botón en pantallas pequeñas */
-    }
-
-    .card {
-        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-        margin-top: 1rem; /* Espaciado superior para separar las tarjetas */
-        width: 100%; /* Ancho completo de la tarjeta en pantallas pequeñas */
-        height: auto; /* Ajusta la altura de la tarjeta según su contenido */
-    }
-
-    .image-group {
-        grid-template-columns: 1fr; /* Una sola columna para las imágenes en pantallas pequeñas */
-    }
-
-    .res-info {
-        flex-direction: column; /* Coloca los elementos en una columna */
-    }
-
-    .res-info > div {
-        margin-bottom: 2rem; /* Espaciado inferior entre los elementos */
-    }
-
-    .footer-div {
-        flex-direction: column; /* Coloca los elementos en una columna */
-    }
 }
+    /* Estilos generales para pantallas pequeñas y medianas */
+    @media screen and (max-width: 899px) {
 
-/* Estilos generales para pantallas de 600px a 899px */
-@media screen and (min-width: 600px) and (max-width: 899px) {
-    /* Ajustes adicionales para pantallas de tamaño mediano */
-}
+        .logo {
+            margin-top: 5rem; /* Aumenta el espaciado superior según tus necesidades */
+        
+        }
 
-/* Estilos generales para pantallas de al menos 900px de ancho */
-@media screen and (min-width: 900px) {
-    section {
-        padding: 7.9rem; /* Aumenta el espaciado interno de las secciones */
+
+        /* Estilos para la navegación en pantallas pequeñas */
+        .nav {
+            flex-direction: column;
+            height: 10rem;
+            /* Coloca los elementos del menú en una columna */
+            align-items: flex-start;
+            /* Alinea los elementos al inicio */
+        }
+
+        .nav-item {
+            margin: 1rem 0;
+            /* Espaciado vertical entre los elementos del menú */
+        }
+
+        .nav-link {
+            font-size: 1.6rem;
+            /* Tamaño de la fuente más grande en pantallas pequeñas */
+        }
+
+ 
+        .menu-toggle {
+            display: block;
+            /* Muestra el botón de menú en pantallas pequeñas */
+        }
+
+        .footer-content {
+            padding: 0 2rem;
+            /* Espaciado horizontal en el footer para pantallas pequeñas */
+        }
+
+        .social-icons {
+            flex-wrap: wrap;
+            /* Permite que los íconos se envuelvan en pantallas pequeñas */
+            justify-content: center;
+            /* Centra los íconos horizontalmente */
+        }
+
+        .social-icons i {
+            font-size: 1.8rem;
+            /* Tamaño de fuente más pequeño para los íconos */
+            padding: .5rem 1.5rem;
+            /* Espaciado interno reducido para los íconos */
+        }
+
+        .news-form {
+            flex-direction: column;
+            /* Coloca el formulario de suscripción en una columna */
+            align-items: center;
+            /* Centra el formulario de suscripción */
+        }
+
+        .news-input {
+            width: calc(100% - 2rem);
+            /* Ajusta el ancho del campo de entrada */
+            margin-bottom: 1rem;
+            /* Espaciado inferior del campo de entrada */
+        }
+
+        .news-btn {
+            margin-left: 0;
+            /* Elimina el espaciado izquierdo del botón en pantallas pequeñas */
+        }
+
+        .card {
+            margin-left: 0;
+            /* Elimina el margen izquierdo en pantallas pequeñas */
+            margin-top: 1rem;
+            /* Espaciado superior para separar las tarjetas */
+            width: 100%;
+            /* Ancho completo de la tarjeta en pantallas pequeñas */
+            height: auto;
+            /* Ajusta la altura de la tarjeta según su contenido */
+        }
+
+        .image-group {
+            grid-template-columns: 1fr;
+            /* Una sola columna para las imágenes en pantallas pequeñas */
+        }
+
+        .res-info {
+            flex-direction: column;
+            /* Coloca los elementos en una columna */
+        }
+
+        .res-info>div {
+            margin-bottom: 2rem;
+            /* Espaciado inferior entre los elementos */
+        }
+
+        .footer-div {
+            flex-direction: column;
+            /* Coloca los elementos en una columna */
+        }
     }
-
-    .menu-toggle {
-        display: none; /* Oculta el botón de menú en pantallas grandes */
-    }
-
-    .nav {
-        justify-content: space-between; /* Justifica el contenido del menú */
-    }
-
-    .nav-list {
-        position: initial; /* Restablece la posición del menú */
-        width: initial; /* Restablece el ancho del menú */
-        height: initial; /* Restablece la altura del menú */
-        background-color: transparent; /* Fondo transparente para el menú en pantallas grandes */
-        padding: 0; /* Elimina el espaciado interno del menú */
-        justify-content: initial; /* Restablece la justificación del contenido del menú */
-        flex-direction: row; /* Disposición en fila de los elementos del menú */
-        transform: initial; /* Restablece la transformación del menú */
-        transition: initial; /* Restablece la transición del menú */
-    }
-
-    .nav-item {
-        margin: 0 2.4rem; /* Espaciado horizontal entre los elementos del menú */
-    }
-
-    .nav-item:last-child {
-        margin-right: 0; /* Elimina el espaciado derecho en el último elemento del menú */
-    }
-
-    .nav-link {
-        font-size: 1.3rem; /* Tamaño de la fuente de los enlaces del menú */
-    }
-
-    .active {
-        position: relative; /* Posición relativa para los elementos activos */
-    }
-    .active::before {
-        content: ''; /* Crea un pseudo-elemento */
-        position: absolute; /* Posición absoluta para el pseudo-elemento */
-        width: 100%; /* Ancho completo del pseudo-elemento */
-        height: 2px; /* Altura del pseudo-elemento */
-        background-color: #fff; /* Color de fondo del pseudo-elemento */
-        left: 0; /* Posición horizontal del pseudo-elemento */
-        bottom: -3px; /* Posición vertical del pseudo-elemento */
-    }
-
-    .h2-sub {
-        font-size: 3rem; /* Tamaño de la fuente del subtítulo */
-    }
-
-    .fil {
-        font-size: 3rem; /* Tamaño de la fuente del subtítulo */
-    }
-    .head {
-        font-size: 4.7rem; /* Tamaño de la fuente del título */
-        letter-spacing: .8rem; /* Espaciado entre letras */
-    }
-
-    .res-info {
-        display: flex; /* Usa Flexbox para la disposición de los elementos */
-        align-items: center; /* Centra verticalmente los elementos */
-    }
-
-    .res-info > div {
-        flex: 1; /* Hace que los elementos dentro de .res-info se expandan igualmente */
-    }
-
-    .pad-rig {
-        padding-right: 7rem; /* Espaciado derecho */
-    }
-
-    .footer-content {
-        max-width: 77.5rem; /* Ancho máximo del contenido del footer */
-        margin: auto; /* Centra el contenido del footer */
-    }
-
-    .footer-content-about {
-        max-width: 51.3rem; /* Ancho máximo de la sección "about" del footer */
-        margin: 0 auto 5.4rem; /* Centra la sección "about" y agrega espaciado inferior */
-    }
-
-    .footer-div {
-        display: flex; /* Usa Flexbox para la disposición de los elementos del footer */
-        justify-content: space-between; /* Justifica el contenido del footer */
-    }
-
-    .social-media,
-    .news-form {
-        width: 100%; /* Ancho completo de los elementos */
-        max-width: 27.3rem; /* Ancho máximo de los elementos */
-        margin: 0 1rem; /* Espaciado horizontal */
-    }
-
-    .news-btn {
-        margin-left: 7.5rem; /* Ajuste del espaciado izquierdo del botón */
-    }
-}
-
-
-    
-}
-
-
-
 
 

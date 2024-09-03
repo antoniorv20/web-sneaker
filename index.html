@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Tienda de Zapatillas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
@@ -32,7 +33,9 @@
       </nav>
     </div>
   </header>
-  
+
+
+
   <section class="hero" id="hero">
     <div class="container">
       <h2 class="h2-sub"><span class="fil">B</span>ienvenido</h2>
@@ -110,7 +113,7 @@
   <section class="pb bt">
     <div class="container">
       <div class="global">
-        <h2 class="h2-sub"><span class="fil">P</span>romociones</h1>
+        <h2 class="h2-sub"><span class="fil">P</span>romociones</h2>
         <h1 class="head">Nuevas Llegadas</h1>
       </div>
     </div>
@@ -155,33 +158,39 @@
             estamos aquí para ayudarte a encontrar el par perfecto para ti.
           </p>
         </div>
-
-        <div class="card">
-          <span>Social</span>
-          <a class="social-link" href="#">
-            <svg ... ></svg>
-          </a>
-          <a class="social-link" href="#">
-            <svg ... ></svg>
-          </a>
-          <a class="social-link" href="#">
-            <svg ... ></svg>
-          </a>
-          <a class="social-link" href="#">
-            <svg ... ></svg>
-          </a>
-        </div>
-
       </div>
+
+
+
+
     </div>
   </footer>
 
   <script>
-   document.querySelector('.menu-toggle').addEventListener('click', function () {
-  document.querySelector('.nav-list').classList.toggle('open');
-});
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('open');
+        menuToggle.classList.toggle('open');
+      });
+
+      // Opcional: Cerrar el menú cuando se hace clic fuera de él
+      document.addEventListener('click', function (event) {
+        if (!nav.contains(event.target) && !menuToggle.contains(event.target) && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          menuToggle.classList.remove('open');
+        }
+      });
+    });
+
+
+
+
 
   </script>
+
 </body>
 
 </html>
