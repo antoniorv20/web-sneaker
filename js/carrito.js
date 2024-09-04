@@ -4,7 +4,7 @@ const products = [
     { id: 2, name: "Nike Air Force", price: 99.99, image: "/images/2.png", sizes: ["39", "40", "41", "42", "43"] },
     { id: 3, name: "Nike Air Zoom Pegasus", price: 119.99, image: "/images/3.png", sizes: ["39", "40", "41", "42", "43"] },
     { id: 4, name: "Nike React Infinity", price: 159.99, image: "/images/4.png", sizes: ["39", "40", "41", "42", "43"] },
-    { id: 5, name: "Nike Blazer Mid" , price: 109.99, image: "/images/5.png", sizes: ["39", "40", "41", "42", "43"] },
+    { id: 5, name: "Nike Blazer Mid", price: 109.99, image: "/images/5.png", sizes: ["39", "40", "41", "42", "43"] },
     { id: 6, name: "Nike Dunk Low", price: 99.99, image: "/images/6.png", sizes: ["39", "40", "41", "42", "43"] },
     { id: 7, name: "Nike Air VaporMax", price: 199.99, image: "/images/7.png", sizes: ["39", "40", "41", "42", "43"] },
     { id: 8, name: "Nike Air Huarache", price: 119.99, image: "/images/8.png", sizes: ["39", "40", "41", "42", "43"] },
@@ -136,18 +136,11 @@ cargarCarrito();
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
+    const navList = document.querySelector('.nav-list');
 
     menuToggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
-      menuToggle.classList.toggle('open');
+        navList.classList.toggle('active');
+        menuToggle.classList.toggle('open');
     });
+});
 
-    // Opcional: Cerrar el menú cuando se hace clic fuera de él
-    document.addEventListener('click', function (event) {
-      if (!nav.contains(event.target) && !menuToggle.contains(event.target) && nav.classList.contains('open')) {
-        nav.classList.remove('open');
-        menuToggle.classList.remove('open');
-      }
-    });
-  });
